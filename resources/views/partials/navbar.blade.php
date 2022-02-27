@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <ul class="navbar-nav">
         <li class="nav-item">
-            <a class="nav-link {{ ( $title === 'Home') ? 'active' : '' }}" aria-current="page" href="/">Home</a>
+            <a class="nav-link {{ ( $title === 'Beranda') ? 'active' : '' }}" aria-current="page" href="/">Beranda</a>
         </li>
         <li class="nav-item">
             <a class="nav-link {{ ( $title === 'About') ? 'active' : '' }}" href="/about">About</a>
@@ -20,6 +20,14 @@
         </li>
 
     </ul>
+    <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('login')}}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{route('register')}}">Register</a>
+            </li>
+          </ul>
     </div>
   </div>
 </nav>
